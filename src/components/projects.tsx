@@ -4,8 +4,8 @@ import Paxumo from "@/assets/paxumo.png";
 import Totem from "@/assets/totem.png";
 export function Projects() {
     return (
-        <div id="projetos" className="w-full text-foreground flex flex-col items-center mt-5">
-            <h1 className="font-bold text-base">PROJETOS</h1>
+        <div id="projetos" className="w-full text-foreground flex flex-col items-center mt-10">
+            <h1 className="font-bold text-xl">PROJETOS</h1>
               <span className="text-xs mt-2">Não posso expor o código fonte!</span>
             <div className="w-full flex flex-col gap-5 items-center justify-center mt-5">
                 <CardProject

@@ -11,7 +11,7 @@ import { TbBrandRedux } from "react-icons/tb";
 export function Skills() {
     return (
         <div className="text-foreground w-full flex flex-col items-center justify-center mt-10">
-            <h1 className="font-bold">EXPERIÊNCIA COM</h1>
+            <h1 className="font-bold text-xl">EXPERIÊNCIA COM</h1>
 
             <div className="grid grid-cols-5 gap-3 mt-5">
                 <FaHtml5 size={35} className="text-orange-500"/>

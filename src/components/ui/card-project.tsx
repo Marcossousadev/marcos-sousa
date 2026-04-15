@@ -11,7 +11,7 @@ interface CardProjectProps {
 }
 export function CardProject({ src, title, description, linkProject, linkGithub }: CardProjectProps) {
     return (
-        <div className="w-[80%] rounded-2xl bg-[#222222] cursor-pointer">
+        <div className="w-[85%] rounded-2xl bg-[#222222] cursor-pointer">
             <Image src={src} className="w-full h-36 object-cover rounded-t-2xl" alt={title} priority />
             <div>
                 <div className="mt-2 p-5">
