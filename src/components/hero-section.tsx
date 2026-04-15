@@ -12,7 +12,7 @@ export function HeroSection() {
                     priority
                     />
                 </div>
-                <h1 className="text-foreground font-bold text-center text-3xl w-4xs">Eu sou programador e  crio soluções como <span className="bg-gradient-to-r from-orange-500 via-pink-400 to-purple-300 bg-clip-text text-transparent">freelancer!</span></h1>
+                <h1 className="text-foreground font-bold text-center text-3xl w-2xs">Eu sou programador e  crio soluções como <span className="bg-gradient-to-r from-orange-500 via-pink-400 to-purple-300 bg-clip-text text-transparent">freelancer!</span></h1>
                 <p className="text-[#C5C5C5] text-md text-center mx-10 w-2xs">
                    Sou um desenvolvedor de software full-stack experiente com mais de 3 anos de experiência profissional, especializado em desenvolvimento front-end.
                    Desenvolvo soluções personalizadas para clientes, utilizando as mais recentes tecnologias e práticas de desenvolvimento. Meu objetivo é criar experiências digitais excepcionais que atendam às necessidades dos meus clientes e superem suas expectativas.
