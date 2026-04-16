@@ -15,33 +15,37 @@ export function CardProject({ src, title, description, linkProject, linkGithub }
             <Image src={src} className="w-full h-full object-cover rounded-t-2xl" alt={title} priority />
             <div>
                 <div className="mt-2 p-5">
-                <h2 className="text-base md:text-base lg:text-lg font-bold mb-2">{title}</h2>
-                <p className="text-[#C5C5C5] text-sm md:text-base lg:text-lg">{description}</p>
-                 <div className="mt-2 text-base font-semibold">
+                    <h2 className="text-base md:text-base lg:text-lg font-bold mb-2">{title}</h2>
+                    <p className="text-[#C5C5C5] text-sm md:text-base lg:text-lg">{description}</p>
+                    <div className="mt-2 text-base font-semibold">
 
-                 </div>
-            </div>
-            <div className="flex gap-4 ml-5 pb-5">         
-                {
-                    linkProject && (
-                        <a href={linkProject} 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
-                        className="text-black flex items-center justify-center bg-white py-1 px-3 md:px-4 md:py-2 md:text-sm lg:text-sm text-xs font-bold border-2 border-white rounded-md hover:bg-transparent hover:text-foreground transition">
-                            <FaExternalLinkAlt className="inline mr-2" />
-                            Ver Projeto
-                        </a>
-                    )
-                }
-                {
-                    linkGithub && (
-                        <a href={linkGithub} target="_blank" rel="noopener noreferrer" className="text-white text-center flex items-center justify-center hover:underline border-2 border-white py-1 px-2 md:px-4 md:py-2 text-xs md:text-sm lg:text-sm font-bold rounded-md">
-                            <SiGithub className="inline mr-2" />
-                            Ver no GitHub
-                        </a>
-                    )
-                }
-            </div>
+                    </div>
+                </div>
+                <div className="flex gap-4 ml-5 pb-5">
+                    {
+                        linkProject && (
+                            <a href={linkProject}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-black bg-white py-1 px-3 md:px-4 md:py-2 md:text-sm lg:text-sm text-xs font-bold border-2 border-white rounded-md hover:bg-transparent hover:text-foreground transition">
+                                <div className="flex items-center justify-center">
+                                    <FaExternalLinkAlt className="inline mr-2" />
+                                    Ver Projeto
+                                </div>
+                            </a>
+                        )
+                    }
+                    {
+                        linkGithub && (
+                            <a href={linkGithub} target="_blank" rel="noopener noreferrer" className="text-white text-center hover:underline border-2 border-white py-1 px-2 md:px-4 md:py-2 text-xs md:text-sm lg:text-sm font-bold rounded-md">
+                                <div className="flex items-center justify-center">
+                                    <SiGithub className="inline mr-2" />
+                                    Ver no GitHub
+                                </div>
+                            </a>
+                        )
+                    }
+                </div>
             </div>
         </div>
     );
