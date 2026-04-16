@@ -8,8 +8,9 @@ interface CardProjectProps {
     description: string;
     linkProject?: string;
     linkGithub?: string;
+    linkProjectTwo?: string;
 }
-export function CardProject({ src, title, description, linkProject, linkGithub }: CardProjectProps) {
+export function CardProject({ src, title, description, linkProject, linkGithub, linkProjectTwo }: CardProjectProps) {
     return (
         <div className="w-[85%] md:w-[60%] lg:w-1/2 rounded-2xl bg-[#222222] cursor-pointer border-2 border-white/10 hover:border-white" data-aos="fade-right" data-aos-delay="200">
             <Image src={src} className="w-full h-full object-cover rounded-t-2xl" alt={title} priority />
@@ -41,6 +42,19 @@ export function CardProject({ src, title, description, linkProject, linkGithub }
                                 <div className="flex items-center justify-center">
                                     <SiGithub className="inline mr-2" />
                                     Ver no GitHub
+                                </div>
+                            </a>
+                        )
+                    }
+                    {
+                        linkProjectTwo && (
+                            <a href={linkProjectTwo}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-white bg-transparent py-1 px-3 md:px-4 md:py-2 md:text-sm lg:text-sm text-xs font-bold border-2 border-white rounded-md">
+                                <div className="flex items-center justify-center">
+                                    <FaExternalLinkAlt className="inline mr-2" />
+                                    Ver Projeto 2
                                 </div>
                             </a>
                         )

@@ -19,9 +19,10 @@ export function Projects() {
                     title="Totem"
                     description="Um totem de atendimento com interface intuitiva e funcionalidades avançadas e painel administrativo."
                     linkProject="https://self-checkout-2-admin.vercel.app/"
+                    linkProjectTwo="https://self-checkout-2-web-g3zd.vercel.app/"
                 />
             </div>
-            <span className="text-xs mt-5 md:text-sm lg:text-lg">Já desenvolvi mais projetos!</span>
+            <span className="text-xs mt-5 md:text-sm lg:text-lg" data-aos="fade-up" data-aos-delay="300">Já desenvolvi mais projetos!</span>
         </div>
     );
 }
