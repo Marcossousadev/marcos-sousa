@@ -6,7 +6,7 @@ import { Footer } from "@/components/footer";
 
 export default function Portfolio() {
   return (
-   <main className="overflow-x-hidden flex flex-col items-center w-full h-full pt-32">
+   <main className="overflow-x-hidden flex flex-col items-center w-full h-full pt-28">
     <Navbar/>
     <HeroSection />
     <Skills/>
