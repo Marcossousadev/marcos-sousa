@@ -11,12 +11,12 @@ interface CardProjectProps {
 }
 export function CardProject({ src, title, description, linkProject, linkGithub }: CardProjectProps) {
     return (
-        <div className="w-[85%] rounded-2xl bg-[#222222] cursor-pointer">
-            <Image src={src} className="w-full h-36 object-cover rounded-t-2xl" alt={title} priority />
+        <div className="w-[85%] md:w-[60%] lg:w-1/2 rounded-2xl bg-[#222222] cursor-pointer border-2 border-white/10">
+            <Image src={src} className="w-full h-full object-cover rounded-t-2xl" alt={title} priority />
             <div>
                 <div className="mt-2 p-5">
-                <h2 className="text-base font-bold mb-2">{title}</h2>
-                <p className="text-[#C5C5C5] text-sm">{description}</p>
+                <h2 className="text-base md:text-base lg:text-lg font-bold mb-2">{title}</h2>
+                <p className="text-[#C5C5C5] text-sm md:text-base lg:text-lg">{description}</p>
                  <div className="mt-2 text-base font-semibold">
 
                  </div>
@@ -27,7 +27,7 @@ export function CardProject({ src, title, description, linkProject, linkGithub }
                         <a href={linkProject} 
                         target="_blank" 
                         rel="noopener noreferrer" 
-                        className="text-black flex items-center justify-center bg-white py-1 px-2 text-xs font-bold border-2 border-white rounded-md hover:underline">
+                        className="text-black flex items-center justify-center bg-white py-1 px-3 md:px-4 md:py-2 md:text-sm lg:text-sm text-xs font-bold border-2 border-white rounded-md hover:bg-transparent hover:text-foreground transition">
                             <FaExternalLinkAlt className="inline mr-2" />
                             Ver Projeto
                         </a>
@@ -35,7 +35,7 @@ export function CardProject({ src, title, description, linkProject, linkGithub }
                 }
                 {
                     linkGithub && (
-                        <a href={linkGithub} target="_blank" rel="noopener noreferrer" className="text-white text-center flex items-center justify-center hover:underline border-2 border-white py-1 px-2 text-xs font-bold rounded-md">
+                        <a href={linkGithub} target="_blank" rel="noopener noreferrer" className="text-white text-center flex items-center justify-center hover:underline border-2 border-white py-1 px-2 md:px-4 md:py-2 text-xs md:text-sm lg:text-sm font-bold rounded-md">
                             <SiGithub className="inline mr-2" />
                             Ver no GitHub
                         </a>
