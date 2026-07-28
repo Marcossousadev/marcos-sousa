@@ -10,9 +10,9 @@ export function Navbar() {
       </h1>
 
       <ul className="flex gap-4 text-sm md:text-base font-medium">
-        <li className="hover:text-gray-400 transition"><Link href="/">Sobre</Link></li>
-        <li><Link href="#projetos" className="hover:text-gray-400 transition">Projetos</Link></li>
-        <li><Link href="#contato" className="hover:text-gray-400 transition">Contato</Link></li>
+        <li className="hover:text-blue-400 transition"><Link href="/">Sobre</Link></li>
+        <li><Link href="#projetos" className="hover:text-blue-400 transition">Projetos</Link></li>
+        <li><Link href="#contato" className="hover:text-blue-400 transition">Contato</Link></li>
       </ul>
     </nav>
   );
