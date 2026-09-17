@@ -3,6 +3,7 @@ import MarcosDev from "@/assets/marcos_dev.jpeg";
 import Paxumo from "@/assets/paxumo.png";
 import Totem from "@/assets/totem.png";
 import Busca from "@/assets/busca_img.png";
+import FitPro from "@/assets/fitpro.png";
 export function Projects() {
     return (
         <div id="projetos" className="w-full text-foreground flex flex-col items-center mt-10 landscape:mt-8">
@@ -26,6 +27,12 @@ export function Projects() {
                     src={Busca}
                     title="Busca de Processos"
                     description="Uma automação pra busca de processos por CPF e CNPJ, cadastro em lotes de documentos e busca automatizada. Nome da aplicação não pode ser divulgado!"
+                />
+                <CardProject
+                    src={FitPro}
+                    title="FitPro"
+                    description="FitPro é um aplicativo de gestão e acompanhamento fitness que conecta personal trainers e alunos, facilitando treinos, evolução e acompanhamento dos resultados."
+                    linkProject="https://www.instagram.com/fit_proia/"
                 />
             </div>
             <span className="text-xs mt-5 md:text-sm lg:text-lg" data-aos="fade-up" data-aos-delay="300">Já desenvolvi mais projetos!</span>
