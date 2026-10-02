@@ -1,29 +1,51 @@
-import { FaHtml5 } from "react-icons/fa";
-import { IoLogoCss3 } from "react-icons/io";
-import { IoLogoJavascript } from "react-icons/io5";
+import { FaHtml5, FaReact, FaNodeJs, FaJava } from "react-icons/fa";
+import { IoLogoCss3, IoLogoJavascript } from "react-icons/io5";
 import { BsTypescript } from "react-icons/bs";
-import { FaReact } from "react-icons/fa";
-import { FaNodeJs } from "react-icons/fa";
 import { RiNextjsFill } from "react-icons/ri";
-import { SiTailwindcss } from "react-icons/si";
-import { SiFastify } from "react-icons/si";
+import { SiTailwindcss, SiFastify, SiSpringboot } from "react-icons/si";
 import { TbBrandRedux } from "react-icons/tb";
+
+const skillsList = [
+    { name: "Java", icon: FaJava, color: "text-orange-500" },
+    { name: "Spring Boot", icon: SiSpringboot, color: "text-emerald-500" },
+    { name: "JavaScript", icon: IoLogoJavascript, color: "text-yellow-400" },
+    { name: "TypeScript", icon: BsTypescript, color: "text-blue-500" },
+    { name: "React", icon: FaReact, color: "text-blue-400" },
+    { name: "Next.js", icon: RiNextjsFill, color: "text-zinc-200" },
+    { name: "Node.js", icon: FaNodeJs, color: "text-green-500" },
+    { name: "Tailwind CSS", icon: SiTailwindcss, color: "text-teal-400" },
+    { name: "Fastify", icon: SiFastify, color: "text-white" },
+    { name: "Redux", icon: TbBrandRedux, color: "text-purple-500" },
+    { name: "HTML5", icon: FaHtml5, color: "text-orange-600" },
+    { name: "CSS3", icon: IoLogoCss3, color: "text-blue-600" },
+];
+
 export function Skills() {
     return (
-        <div className="text-foreground w-full flex flex-col items-center justify-center mt-10 landscape:mt-8 lg:mb-10">
-            <h1 className="font-bold text-xl md:text-2xl lg:text-3xl" data-aos="fade-up" data-aos-delay="100">EXPERIÊNCIA COM</h1>
-            <div className="grid grid-cols-5 gap-3 md:gap-8 lg:gap-12 mt-5 md:mt-7 lg:mt-10"  data-aos="fade-up" data-aos-delay="200">
-                <FaHtml5 size={35} className="text-orange-500 md:scale-125 lg:scale-150"  data-aos="fade-up" data-aos-delay="200"/>
-                <IoLogoCss3 size={35} className="text-blue-500 md:scale-125 lg:scale-150"  data-aos="fade-up" data-aos-delay="200"/>
-                <IoLogoJavascript size={35} className="text-yellow-500 md:scale-125 lg:scale-150" data-aos="fade-up" data-aos-delay="200"/>   
-                <BsTypescript size={32} className="text-blue-600 md:scale-125 lg:scale-150" data-aos="fade-up" data-aos-delay="200"/>
-                <FaReact size={35} className="text-blue-400 md:scale-125 lg:scale-150" data-aos="fade-up" data-aos-delay="200"/>
-                <FaNodeJs size={35} className="text-green-500 md:scale-125 lg:scale-150"  data-aos="fade-down" data-aos-delay="300"/>
-                <RiNextjsFill size={35} className="text-gray-500 md:scale-125 lg:scale-150" data-aos="fade-down" data-aos-delay="300"/>
-                <SiTailwindcss size={35} className="text-teal-400 md:scale-125 lg:scale-150" data-aos="fade-down" data-aos-delay="300"/>
-                <SiFastify size={35} className="text-white md:scale-125 lg:scale-150"  data-aos="fade-down" data-aos-delay="300"/>
-                <TbBrandRedux size={35} className="text-purple-500 md:scale-125 lg:scale-150"  data-aos="fade-down" data-aos-delay="300"/>
+        <section id="skills" className="w-full flex flex-col items-center text-zinc-100">
+            <h2 className="font-bold text-xl md:text-2xl text-center mb-8" data-aos="fade-up">
+                EXPERIÊNCIA COM
+            </h2>
+
+            <div 
+                className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 w-full"
+                data-aos="fade-up"
+                data-aos-delay="100"
+            >
+                {skillsList.map((skill, idx) => {
+                    const Icon = skill.icon;
+                    return (
+                        <div 
+                            key={idx} 
+                            className="flex flex-col items-center justify-center p-4 rounded-xl bg-zinc-900/60 border border-zinc-800 hover:border-zinc-700 transition"
+                        >
+                            <Icon size={32} className={`${skill.color} mb-2`} />
+                            <span className="text-xs font-medium text-zinc-300">{skill.name}</span>
+                        </div>
+                    );
+                })}
             </div>
-        </div>
+        </section>
     );
 }
+

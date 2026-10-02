@@ -1,30 +1,48 @@
 import { MdEmail } from "react-icons/md";
-import { IoLogoInstagram } from "react-icons/io5";
-import { IoLogoLinkedin } from "react-icons/io5";
-import { IoLogoGithub } from "react-icons/io5";
+import { IoLogoInstagram, IoLogoLinkedin, IoLogoGithub } from "react-icons/io5";
+
 export function Footer() {
     return (
-        <footer id="contato" className="w-full bg-mist-950 border-t border-white text-foreground mt-10 lg:px-25">
-            <div className="w-full p-10 flex flex-col gap-2">
-                <h1 className="text-xl font-bold md:text-2xl lg:text-3xl">Contato</h1>
-                <p className="text-sm text-[#C5C5C5] md:text-base lg:text-lg lg:w-2xl">Desenvolvedor de Software Full Stack experiente, com mais de 3 anos de experiência prática em design e implementação de soluções web robustas, escaláveis ​​e inovadoras. Habilidoso em utilizar um conjunto abrangente de habilidades que englobam tecnologias de front-end e back-end.</p>
-                <span className="text-xs md:text-sm lg:text-base mt-2 flex flex-row gap-2 items-center lg:ml-2"><MdEmail size={15} className="md:scale-125 lg:scale-150"/> marcos.a.sousa.dev@gmail.com</span>
+        <footer id="contato" className="w-full bg-[#0a0a0a] border-t border-zinc-800 text-zinc-100 py-12 mt-12">
+            <div className="max-w-5xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+                <div className="flex flex-col items-center md:items-start space-y-2 text-center md:text-left">
+                    <h3 className="text-xl font-bold">Contato</h3>
+                    <p className="text-sm text-zinc-400 max-w-md">
+                        Desenvolvedor de Software Full Stack com mais de 3 anos de experiência em Node.js, React, Next.js e TypeScript, expandindo conhecimentos no ecossistema Java & Spring Boot.
+                    </p>
+                    <a href="mailto:marcos.a.sousa.dev@gmail.com" className="text-xs text-zinc-300 flex items-center gap-2 pt-1 hover:text-white transition">
+                        <MdEmail size={16} /> marcos.a.sousa.dev@gmail.com
+                    </a>
+                </div>
 
-                <div className="w-full mt-5 flex flex-row gap-5 text-sm lg:items-center lg:justify-center">
-                    <a href="https://www.instagram.com/marcossousadev/" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center gap-1 md:gap-2 lg:text-base">
-                        <IoLogoInstagram size={20} className="md:scale-110" />
-                        Instagram
+                <div className="flex items-center gap-6 text-sm">
+                    <a 
+                        href="https://www.instagram.com/marcossousadev/" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="flex items-center gap-1.5 hover:text-blue-400 transition"
+                    >
+                        <IoLogoInstagram size={18} /> Instagram
                     </a>
-                    <a href="https://www.linkedin.com/in/marcos-antonio-de-sousa-sampaio-00a97a29a/" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center gap-1 md:gap-2 lg:text-base">
-                        <IoLogoLinkedin size={20} className="md:scale-110" />
-                        LinkedIn
+                    <a 
+                        href="https://www.linkedin.com/in/marcos-antonio-de-sousa-sampaio-00a97a29a/" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="flex items-center gap-1.5 hover:text-blue-400 transition"
+                    >
+                        <IoLogoLinkedin size={18} /> LinkedIn
                     </a>
-                    <a href="https://github.com/Marcossousadev" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center gap-1 md:gap-2 lg:text-base">
-                        <IoLogoGithub size={20} className="md:scale-110" />
-                        GitHub
+                    <a 
+                        href="https://github.com/Marcossousadev" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="flex items-center gap-1.5 hover:text-blue-400 transition"
+                    >
+                        <IoLogoGithub size={18} /> GitHub
                     </a>
                 </div>
             </div>
         </footer>
-    )
+    );
 }
+

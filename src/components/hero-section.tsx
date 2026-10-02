@@ -1,43 +1,59 @@
 import Image from "next/image";
 import MarcosDev from "@/assets/marcos_dev.png";
 import { LinkAction } from "./ui/link-action";
+import { CodeWindow } from "./ui/code-window";
+
 export function HeroSection() {
     return (
-        <div className="w-full lg:min-h-screen flex flex-col md:flex-row items-center md:justify-around gap-3 md:gap-0 text-foreground pt-28">
-            <div className="inline-block p-[3px] md:hidden rounded-full bg-gradient-to-r from-blue-700 via-blue-600 to-cyan-500" data-aos="fade-down">
-                <Image src={MarcosDev}
-                    alt="img_marcos"
-                    className="rounded-full w-28 h-28 md:h-36 md:w-36 object-cover"
-                    priority
-                />
-            </div>
-            <div className="flex flex-col items-center md:items-start md:gap-2 md:ml-20">
-                <h1
-                    className="text-foreground font-bold text-center text-3xl md:text-4xl mx-10 md:mx-0 md:w-sm md:text-start lg:text-6xl lg:w-2xl" data-aos="fade-down" data-aos-delay="200">
-                    Eu sou programador e  crio soluções como <span className="bg-gradient-to-r from-blue-700 via-blue-600 to-cyan-500 bg-clip-text text-transparent">freelancer!</span>
-                </h1>
-                <p className="text-[#C5C5C5] text-base mt-2 text-center w-2xs mx-10 md:mx-0 md:text-start md:w-sm md:text-lg lg:text-2xl lg:w-2xl lg:mt-5" data-aos="fade-down" data-aos-delay="300">
-                    Sou um desenvolvedor de software full-stack experiente com mais de 3 anos de experiência profissional, especializado em desenvolvimento front-end.
-                    Desenvolvo soluções personalizadas para clientes, utilizando as mais recentes tecnologias e práticas de desenvolvimento. Meu objetivo é criar experiências digitais excepcionais que atendam às necessidades dos meus clientes e superem suas expectativas.
-                </p>
-                <div
-                    className="hidden md:flex md:flex-row md:gap-2 md:mt-5" data-aos="fade-right" data-aos-delay="200">
-                    <LinkAction href="https://wa.me/558597961611?text=Oi%20tenho%20interesse%20no%20seu%20serviço" text="Fale comigo!" />
-                    <LinkAction href="/curriculo.pdf" text="Baixar Currículo" transparent download={true} />
+        <section id="sobre" className="w-full pt-8 md:pt-16 flex flex-col gap-12">
+            {/* Top row: Profile & Corporate Dev Intro */}
+            <div className="flex flex-col md:flex-row items-center justify-between gap-10">
+                <div className="flex-1 flex flex-col items-center md:items-start text-center md:text-left">
+                    <h1 
+                        className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight"
+                        data-aos="fade-down"
+                    >
+                        Desenvolvedor de Software <span className="bg-gradient-to-r from-blue-700 via-blue-600 to-cyan-500 bg-clip-text text-transparent">Full Stack</span>
+                    </h1>
+                    
+                    <p 
+                        className="text-zinc-400 text-base md:text-lg mt-4 max-w-2xl leading-relaxed"
+                        data-aos="fade-down"
+                        data-aos-delay="100"
+                    >
+                        Sou desenvolvedor de software full-stack com mais de 3 anos de experiência profissional, especialista no ecossistema JavaScript/TypeScript (<strong className="text-zinc-200">Node.js, React, Next.js</strong>), e em constante expansão no backend com <strong className="text-zinc-200">Java e Spring Boot</strong>. Focado em construir aplicações web escaláveis, código limpo e soluções de alto impacto para empresas e produtos digitais.
+                    </p>
+
+                    <div 
+                        className="flex flex-row gap-3 mt-6"
+                        data-aos="fade-up"
+                        data-aos-delay="200"
+                    >
+                        <LinkAction href="https://wa.me/558597961611?text=Oi%20tenho%20interesse%20em%20conversar%20sobre%20uma%20oportunidade" text="Fale comigo!" />
+                        <LinkAction href="/curriculo.pdf" text="Baixar Currículo" transparent download={true} />
+                    </div>
+                </div>
+
+                <div className="relative shrink-0" data-aos="fade-left">
+                    <div className="p-1 rounded-full bg-gradient-to-r from-blue-600 via-blue-500 to-cyan-500 shadow-xl">
+                        <Image 
+                            src={MarcosDev}
+                            alt="Marcos Sousa"
+                            className="rounded-full w-36 h-36 md:w-52 md:h-52 object-cover"
+                            priority
+                        />
+                    </div>
                 </div>
             </div>
-            <div
-                className="flex flex-row gap-2 mt-5 md:hidden" data-aos="fade-right" data-aos-delay="300">
-                <LinkAction href="https://wa.me/558597961611?text=Oi%20tenho%20interesse%20no%20seu%20serviço" text="Fale comigo!" />
-                <LinkAction href="/curriculo.pdf" text="Baixar Currículo" transparent download={true} />
+
+            {/* Interactive Code Window */}
+            <div className="w-full flex justify-center pt-4" data-aos="fade-up" data-aos-delay="300">
+                <CodeWindow />
             </div>
-            <div className="hidden md:inline-block p-[3px] rounded-full bg-gradient-to-r from-blue-700 via-blue-600 to-cyan-500 mr-20" data-aos="fade-left">
-                <Image src={MarcosDev}
-                    alt="img_marcos"
-                    className="rounded-full w-28 h-28 md:h-36 md:w-36 object-cover lg:h-48 lg:w-48"
-                    priority
-                />
-            </div>
-        </div>
+        </section>
     );
 }
+
+
+
+
