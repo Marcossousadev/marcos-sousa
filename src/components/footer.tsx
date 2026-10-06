@@ -3,7 +3,7 @@ import { IoLogoInstagram, IoLogoLinkedin, IoLogoGithub } from "react-icons/io5";
 
 export function Footer() {
     return (
-        <footer id="contato" className="w-full bg-[#0a0a0a] border-t border-zinc-800 text-zinc-100 py-12 mt-12">
+        <footer id="contato" className="w-full bg-zinc-900 border-t border-zinc-800 text-zinc-100 py-12 mt-12">
             <div className="max-w-5xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
                 <div className="flex flex-col items-center md:items-start space-y-2 text-center md:text-left">
                     <h3 className="text-xl font-bold">Contato</h3>
@@ -45,4 +45,4 @@ export function Footer() {
         </footer>
     );
 }
-
+
