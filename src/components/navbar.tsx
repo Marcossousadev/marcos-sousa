@@ -23,6 +23,7 @@ export function Navbar() {
         {/* Desktop Navigation Links */}
         <ul className="hidden md:flex gap-6 text-sm md:text-base font-medium">
           <li className="hover:text-blue-400 transition"><Link href="#sobre">Sobre</Link></li>
+          <li className="hover:text-blue-400 transition"><Link href="#experiencia">Experiência</Link></li>
           <li className="hover:text-blue-400 transition"><Link href="#skills">Habilidades</Link></li>
           <li className="hover:text-blue-400 transition"><Link href="#projetos">Projetos</Link></li>
           <li className="hover:text-blue-400 transition"><Link href="#contato">Contato</Link></li>
@@ -46,6 +47,13 @@ export function Navbar() {
               className="py-2 hover:text-blue-400 transition-colors border-b border-white/10"
             >
               Sobre
+            </Link>
+            <Link
+              href="#experiencia"
+              onClick={() => setIsOpen(false)}
+              className="py-2 hover:text-blue-400 transition-colors border-b border-white/10"
+            >
+              Experiência
             </Link>
             <Link
               href="#skills"

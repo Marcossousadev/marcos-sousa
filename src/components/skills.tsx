@@ -1,4 +1,4 @@
-import { FaHtml5, FaReact, FaNodeJs, FaJava } from "react-icons/fa";
+import { FaHtml5, FaReact, FaNodeJs, FaJava, FaLaravel } from "react-icons/fa";
 import { IoLogoCss3, IoLogoJavascript } from "react-icons/io5";
 import { BsTypescript } from "react-icons/bs";
 import { RiNextjsFill } from "react-icons/ri";
@@ -13,6 +13,7 @@ const skillsList = [
     { name: "React", icon: FaReact, color: "text-blue-400" },
     { name: "Next.js", icon: RiNextjsFill, color: "text-zinc-200" },
     { name: "Node.js", icon: FaNodeJs, color: "text-green-500" },
+    { name: "Laravel", icon: FaLaravel, color: "text-red-500" },
     { name: "Tailwind CSS", icon: SiTailwindcss, color: "text-teal-400" },
     { name: "Fastify", icon: SiFastify, color: "text-white" },
     { name: "Redux", icon: TbBrandRedux, color: "text-purple-500" },
