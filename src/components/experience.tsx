@@ -1,6 +1,5 @@
 import { FaBriefcase, FaCreditCard, FaTicketSimple } from "react-icons/fa6";
 
-export function Experience() {
   const experiences = [
     {
       title: "Desenvolvedor Full Stack",
@@ -32,7 +31,8 @@ export function Experience() {
       skills: ["React", "Laravel", "HTML/CSS", "Regras de Negócio"]
     }
   ];
-
+  
+export function Experience() {
   return (
     <section id="experiencia" className="w-full flex flex-col items-center text-zinc-100">
       <h2 className="font-bold text-xl md:text-2xl text-center mb-1 flex items-center gap-2" data-aos="fade-up">

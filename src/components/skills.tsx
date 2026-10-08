@@ -23,30 +23,32 @@ const skillsList = [
 
 export function Skills() {
     return (
-        <section id="skills" className="w-full flex flex-col items-center text-zinc-100">
-            <h2 className="font-bold text-xl md:text-2xl text-center mb-8" data-aos="fade-up">
+        <section
+            id="skills"
+            className="flex w-full flex-col items-center text-zinc-100"
+        >
+            <h2 className="mb-8 text-center text-xl font-bold md:text-2xl">
                 EXPERIÊNCIA COM
             </h2>
 
-            <div 
-                className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 w-full"
-                data-aos="fade-up"
-                data-aos-delay="100"
-            >
-                {skillsList.map((skill, idx) => {
-                    const Icon = skill.icon;
-                    return (
-                        <div 
-                            key={idx} 
-                            className="flex flex-col items-center justify-center p-4 rounded-xl bg-zinc-900/60 border border-zinc-800 hover:border-zinc-700 transition"
-                        >
-                            <Icon size={32} className={`${skill.color} mb-2`} />
-                            <span className="text-xs font-medium text-zinc-300">{skill.name}</span>
-                        </div>
-                    );
-                })}
+            <div className="grid w-full grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
+                {skillsList.map(({ name, icon: Icon, color }) => (
+                    <div
+                        key={name}
+                        className="flex flex-col items-center justify-center rounded-xl border border-zinc-800 bg-zinc-900/60 p-4 transition-colors hover:border-zinc-700"
+                    >
+                        <Icon
+                            size={32}
+                            className={`${color} mb-2`}
+                            aria-hidden="true"
+                        />
+
+                        <span className="text-xs font-medium text-zinc-300">
+                            {name}
+                        </span>
+                    </div>
+                ))}
             </div>
         </section>
     );
 }
-
