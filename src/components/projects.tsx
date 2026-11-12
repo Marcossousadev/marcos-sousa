@@ -3,8 +3,8 @@ import Paxumo from "@/assets/paxumo.png";
 import Totem from "@/assets/totem.png";
 import Busca from "@/assets/busca_img.png";
 import FitPro from "@/assets/fitpro.png";
-import JavaCRUD from "@/assets/javaCrud.png";
-
+import API from "@/assets/api.png";
+import APPSumo from "@/assets/app-sumo.png";
 const projects = [
     {
         src: Paxumo,
@@ -12,7 +12,6 @@ const projects = [
         description:
             "Uma plataforma de PDV integrada a gateway de pagamentos com credenciais de recebimento personalizadas, onde cada venda é direcionada automaticamente para a conta do cliente.",
         tags: ["Next.js", "Node.js", "Gateway de Pagamentos", "Tailwind CSS"],
-        linkProject: "https://paxumo-pdv.vercel.app/",
     },
     {
         src: Totem,
@@ -20,8 +19,6 @@ const projects = [
         description:
             "Um totem de atendimento com interface intuitiva para clientes e painel administrativo para gerenciamento de solicitações.",
         tags: ["Next.js", "React", "Node.js", "Tailwind CSS", "PostgreSQL"],
-        linkProject: "https://self-checkout-2-admin.vercel.app/",
-        linkProjectTwo: "https://self-checkout-2-web-g3zd.vercel.app/",
     },
     {
         src: Busca,
@@ -53,13 +50,18 @@ const projects = [
         linkProject: "https://www.instagram.com/fit_proia/",
     },
     {
-        src: JavaCRUD,
-        title: "CRUD Java",
+        src: API,
+        title: "Sumo API App",
         description:
-            "CRUD em Java desenvolvido como projeto de estudo para praticar operações de persistência de dados.",
-        tags: ["Java", "Spring Boot", "H2 Database", "Maven", "JPA"],
-        linkProject:
-            "https://github.com/Marcossousadev/projeto-cadastro-usuarios.git",
+            "API Desenvolvida para um app de alunos, personais e nutricionistas.",
+        tags: ["Java", "Spring Boot", "Postgressql", "Spring Data JPA", "Spring Security"],
+    },
+     {
+        src: APPSumo,
+        title: "Sumo App com React Native",
+        description:
+            "App feito com React Native e Expo Go para treinadores, nutricionistas e alunos.",
+        tags: ["React Native", "Expo Go", "NativeWind"],
     },
 ];
 

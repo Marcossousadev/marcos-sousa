@@ -1,13 +1,14 @@
-import { FaHtml5, FaReact, FaNodeJs, FaJava, FaLaravel } from "react-icons/fa";
-import { IoLogoCss3, IoLogoJavascript } from "react-icons/io5";
+import { FaHtml5, FaReact, FaNodeJs, FaJava, FaLaravel, } from "react-icons/fa";
+import { IoLogoCss3, IoLogoJavascript, } from "react-icons/io5";
 import { BsTypescript } from "react-icons/bs";
 import { RiNextjsFill } from "react-icons/ri";
-import { SiTailwindcss, SiFastify, SiSpringboot } from "react-icons/si";
+import { SiTailwindcss, SiFastify, SiSpringboot, SiSpringsecurity, SiMysql } from "react-icons/si";
 import { TbBrandRedux } from "react-icons/tb";
 
 const skillsList = [
     { name: "Java", icon: FaJava, color: "text-orange-500" },
     { name: "Spring Boot", icon: SiSpringboot, color: "text-emerald-500" },
+    { name: "Spring Security", icon: SiSpringsecurity, color: "text-emerald-500" },
     { name: "JavaScript", icon: IoLogoJavascript, color: "text-yellow-400" },
     { name: "TypeScript", icon: BsTypescript, color: "text-blue-500" },
     { name: "React", icon: FaReact, color: "text-blue-400" },
@@ -19,6 +20,8 @@ const skillsList = [
     { name: "Redux", icon: TbBrandRedux, color: "text-purple-500" },
     { name: "HTML5", icon: FaHtml5, color: "text-orange-600" },
     { name: "CSS3", icon: IoLogoCss3, color: "text-blue-600" },
+    { name: "React Native", icon: FaReact, color: "text-blue-400" },
+    { name: "MySql", icon: SiMysql, color: "text-blue-400" },
 ];
 
 export function Skills() {

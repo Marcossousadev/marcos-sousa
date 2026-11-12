@@ -5,7 +5,6 @@ import { FaBriefcase, FaCreditCard, FaTicketSimple } from "react-icons/fa6";
       title: "Desenvolvedor Full Stack",
       company: "Gateway de Pagamentos",
       period: "Atuação Profissional",
-      icon: FaCreditCard,
       badgeColor: "from-blue-600 to-cyan-500",
       description:
         "Atuação no desenvolvimento e evolução de ecossistema de pagamentos digitais, abrangendo a plataforma de back-office administrativo, APIs financeiras de alta concorrência e interfaces de usuário.",
@@ -14,13 +13,12 @@ import { FaBriefcase, FaCreditCard, FaTicketSimple } from "react-icons/fa6";
         "Manutenção da API de Pagamentos com Node.js, assegurando segurança e estabilidade nas transações.",
         "Desenvolvimento da interface de usuário (Front-end) utilizando React com foco em usabilidade e performance."
       ],
-      skills: ["Laravel", "Node.js", "React", "HTML5", "CSS3", "API de Pagamentos"]
+      skills: ["Laravel", "Node.js", "React", "HTML5", "CSS3", "Integração com provedores de pagamento"]
     },
     {
       title: "Desenvolvedor Full Stack",
       company: "Plataformas de Raspadinhas Online",
       period: "Atuação Freelance / Projetos",
-      icon: FaTicketSimple,
       badgeColor: "from-purple-600 to-blue-500",
       description:
         "Desenvolvimento de soluções completas para plataformas de raspadinhas online, com foco em lógica de negócios, dinamismo e experiência interativa em tempo real.",
@@ -28,8 +26,31 @@ import { FaBriefcase, FaCreditCard, FaTicketSimple } from "react-icons/fa6";
         "Criação da interface de usuário altamente responsiva e interativa utilizando React.",
         "Construção da lógica de backend, gerenciamento de estado e regras de negócio com Laravel."
       ],
-      skills: ["React", "Laravel", "HTML/CSS", "Regras de Negócio"]
-    }
+      skills: ["React", "Laravel", "HTML/CSS", "Integração iGaming"]
+    },
+    
+{
+  title: "Desenvolvedor Full Stack Freelancer",
+  company: "Sistema de Automação e Monitoramento de Processos Judiciais",
+  period: "Atuação Freelancer / Projeto Jurídico",
+  description:
+    "Desenvolvimento de uma plataforma de automação jurídica voltada à consulta e ao acompanhamento de processos judiciais, com o objetivo de otimizar a rotina de advogados, reduzir tarefas manuais e facilitar o acesso a informações processuais.",
+  highlights: [
+    "Desenvolvimento de interfaces modernas, responsivas e interativas utilizando React.",
+    "Construção de uma API RESTful com Fastify e Nodejs, implementando regras de negócio e processamento de dados jurídicos.",
+    "Implementação de mecanismos automatizados para consulta e acompanhamento de processos judiciais.",
+    "Integração com serviços externos para obtenção e atualização de informações processuais.",
+    "Estruturação da aplicação com foco em segurança, escalabilidade, organização e manutenibilidade do código."
+  ],
+  skills: [
+    "Next",
+    "Fastify",
+    "Node",
+    "Integração de APIs",
+    "Automação de Processos",
+  ]
+}
+
   ];
   
 export function Experience() {
@@ -44,7 +65,6 @@ export function Experience() {
 
       <div className="w-full flex flex-col gap-6" data-aos="fade-up" data-aos-delay="200">
         {experiences.map((exp, idx) => {
-          const Icon = exp.icon;
           return (
             <div
               key={idx}
@@ -52,9 +72,6 @@ export function Experience() {
             >
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-4 border-b border-zinc-800">
                 <div className="flex items-center gap-3">
-                  <div className={`p-3 rounded-xl bg-gradient-to-br ${exp.badgeColor} text-white shadow-md`}>
-                    <Icon className="size-6" />
-                  </div>
                   <div>
                     <h3 className="text-lg md:text-xl font-bold text-white">{exp.title}</h3>
                     <p className="text-sm font-medium text-blue-400">{exp.company}</p>

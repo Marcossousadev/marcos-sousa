@@ -25,7 +25,7 @@ export function Footer() {
                         <IoLogoInstagram size={18} /> Instagram
                     </a>
                     <a 
-                        href="https://www.linkedin.com/in/marcos-antonio-de-sousa-sampaio-00a97a29a/" 
+                        href="https://www.linkedin.com/in/marcos-sousa-00a97a29a/" 
                         target="_blank" 
                         rel="noopener noreferrer" 
                         className="flex items-center gap-1.5 hover:text-blue-400 transition"

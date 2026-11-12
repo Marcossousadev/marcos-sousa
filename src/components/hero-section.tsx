@@ -1,12 +1,11 @@
 import Image from "next/image";
-import MarcosDev from "@/assets/marcos_dev.png";
+import MarcosDev from "@/assets/marcos_dev.jpeg";
 import { LinkAction } from "./ui/link-action";
 import { CodeWindow } from "./ui/code-window";
 
 export function HeroSection() {
     return (
         <section id="sobre" className="w-full pt-8 md:pt-16 flex flex-col gap-12">
-            {/* Top row: Profile & Corporate Dev Intro */}
             <div className="flex flex-col md:flex-row items-center justify-between gap-10">
                 <div className="flex-1 flex flex-col items-center md:items-start text-center md:text-left">
                     <h1 
@@ -56,4 +55,4 @@ export function HeroSection() {
 
 
 
-
+
